@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SFR-working</string>
+    <string name="comein">COME IN</string>
+    <string name="pass">Password :</string>
+    <string name="login">Login :</string>
+    <string name="navigate">NAVIGATE</string>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mazebug.sfr_working.MainActivity"
+    android:clickable="true"
+    android:onClick="showNavButt"
+    android:layoutMode="opticalBounds">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/world"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to SFR Application!"
+            android:id="@+id/textView12"
+            android:textSize="28sp"
+            android:textIsSelectable="false"
+            android:textColor="#f00c10"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To use the application, find  "
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:textColor="#b913ab"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView12"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="44dp"
+            android:background="#89ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the instruction below.  "
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:textIsSelectable="true"
+            android:textColor="#b913ab"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="#89ffffff" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="1. To start browsing the application, open the &quot;Navigation&quot; press the image in the left corner. "
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:textColor="#ef0f1a"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:background="#89ffffff"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="2. To enter the information about a new SIT in the &quot;Navigation&quot; press &quot;New SFR&quot;. "
+            android:id="@+id/textView5"
+            android:textSize="20sp"
+            android:textColor="#ef0f1a"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:background="#89ffffff"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="3. To view the Introduced earlier data press &quot;My option&quot; in the “Navigation”. "
+            android:id="@+id/textView6"
+            android:textSize="20sp"
+            android:textColor="#ef0f1a"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:background="#89ffffff"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="4. To search a Sit by given criteria press “Search” button in the “Navigation”.  "
+            android:id="@+id/textView7"
+            android:textSize="20sp"
+            android:textColor="#ef0f1a"
+            android:textStyle="bold"
+            android:background="#89ffffff"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/navPanel"
+        android:layout_margin="0dp"
+        android:background="#283c7b"
+        android:clickable="true"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false"
+        android:layoutMode="clipBounds"
+        android:onClick="dontHide">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigate"
+            android:id="@+id/textView"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:id="@+id/hideNav"
+        android:padding="0dp"
+        android:onClick="hidePanel"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/navPanel"
+        android:layout_toEndOf="@+id/navPanel" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:id="@+id/openNav"
+        android:padding="0dp"
+        android:onClick="openPanel"
+        android:layout_marginTop="109dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/hideNav" />
+
+</RelativeLayout>

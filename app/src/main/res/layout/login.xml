@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_form"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mazebug.sfr_working.MainActivity">
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginField"
+        android:layout_marginTop="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/passField"
+        android:layout_alignStart="@+id/passField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/logText"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#040303"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignTop="@+id/loginField"
+        android:layout_alignLeft="@+id/passText"
+        android:layout_alignStart="@+id/passText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passField"
+        android:layout_marginTop="57dp"
+        android:shadowColor="#0f0a0a"
+        android:singleLine="false"
+        android:textColor="#0e0b0b"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/loginField"
+        android:layout_toRightOf="@+id/passText"
+        android:layout_toEndOf="@+id/passText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:id="@+id/passText"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#040303"
+        android:layout_alignTop="@+id/passField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comein"
+        android:id="@+id/comeIn"
+        android:background="@drawable/info_bg"
+        android:layout_marginTop="65dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/passField"
+        android:layout_centerHorizontal="true"
+        android:onClick="enterClick" />
+
+</RelativeLayout>
