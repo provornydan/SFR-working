@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10. Search_Area_Description"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:textSize="25sp"
+        android:id="@+id/textView8"
+        android:textStyle="bold"
+        android:textColorLink="#000000"
+        android:textColor="#050505" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12. Policies_Landuse_ Conservation_ Designations"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="25sp"
+        android:textColor="#060606"
+        android:textStyle="bold"
+        android:id="@+id/textView13" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
